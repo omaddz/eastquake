@@ -99,7 +99,7 @@ Once the indicator weights were calculated, they were standardized so the sum of
 Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
 
 ###### Table 2. Final weights (in %) of all 12 indicators   
-![alt text](https://github.com/omaddz/eastquake/blob/assets/img/t1.jpg?raw=true)
+![alt text](/t1.JPG?raw=true)
 
 ##### _Part 3 - Calculating the Vulnerability Index_  
 
