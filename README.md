@@ -88,58 +88,22 @@ The rasters were all put through the Reclassify tool to reclassify the data on a
 Each indicator was assigned a weight reflective of its proportion to its influence using a Pairwise Comparison Matrix.
 
 ###### Table 1. Pairwise Comparison Matrix  
-![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t1.png?raw=true)
-
-Factor 1 refers to neighbourhoods with high socioeconomic challenges, such as high unemployment and lower incomes. Factor 2 describes neighbourhoods with physical infrastructure challenges, such as low walkability and a low number of healthy food stores. Factor 3 refers to neighbourhoods with acute vulnerabilities, such as higher premature mortality and unnecessary hospitalizations. These factors correspond to the research done by Urban HEARTS@Toronto as common challenges faced by Toronto neighbourhoods, making these factors appropriate for calculating inequity.    
-
-Because the Neighbourhood Equity Index is meant to identify differences between neighbourhoods, the factors explaining the most variance were weighted more heavily. Weights for the 15 indicators (listed in Table 1 above) were derived by the Social Policy Analysis and Research for the City of Toronto based on the Eigenvalues and community consultations [12].   
+![alt text](https://github.com/omaddz/eastquake/blob/main/img/t1.png?raw=true)
 
 The composite weight for each indicator was calculated using the following formula, which was done in Microsoft Excel by Team McRaster:   
 
 Indicator Weight =  (Factor Score1 * Eigenvalue1) + (Factor Score2 * Eigenvalue2) + (Factor Score3 * Eigenvalue3)   
 
-#### Sample calculation of the Indicator Weight for Diabetes:   
-
-Indicator Weight =  (0.826 * 5.378) + (0.323 * 3.147) + (0.218 * 2.559)   
-				= 6.017   
-
-
 Once the indicator weights were calculated, they were standardized so the sum of all weightings equal 1, using this formula:     
 
 Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
 
-
-#### Sample calculation of the Standardized Indicator Weight for Diabetes:   
-Standardized Indicator Weight = 6.017 / 51.213   
-= 0.117   
-
 ###### Table 2. Final weights (in %) of all 15 indicators   
-![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t2.png?raw=true)
+![alt text](https://github.com/omaddz/eastquake/blob/main/img/t2.png?raw=true)
 
-##### _Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
+##### _Part 3 - Calculating the Vulnerability Index_  
 
-Weighted Neighbourhood Equity index was first calculated so that the resulting scores ranged from 0 to 1, where 1 is inequitable and 0 is equitable:  
-
-Weighted Score = Sum of  (Standardized Indicator Value(i) * Standardized Indicator Weight(i))
-Where i is one of the 15 indicators   
-
-#### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
-
-Weighted Score = 0.040404 * 0.117   
-= 0.169223   
-
-
-Finally, the scores were reversed and multiplied by 100 so that the final Neighbourhood equity Index would range from 0 to 100, with 0 being least equitable (worst outcomes) and 100 being most equitable (best outcomes):   
-
-Neighbourhood Equity Index = (1- Weighted Score) * 100   
-
-#### Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
-
-Neighbourhood Equity Index = (1- 0.169223) * 100
-= 83.08   
-
-
-Note: The equations were provided by the Social Policy Analysis and Research for the City of Toronto, but all calculations were re-done by Team McRaster in Microsoft Excel and the ArcGIS Pro Field Calculator to display the data spatially. The intention of Team McRaster is to display this data in an interactive and transparent manner, to reach the citizens of Toronto and key decision makers.    
+All of the reclassified rasters and their weights were loaded into the Weighted Overlay Tool. The output was the Vulnerability surface. Zonal Statistics were used to determine the average vulnerability for each CT in Hamilton, and the Locate Regions Tool was used to locate the top ten regions at risk from earthquakes.
 
 ## Geospatial Open Data Sources   
 
@@ -148,24 +112,23 @@ Table 3. Historical Earthquake Data
 | --- | --- |
 | <b>Provinces and Territories of Canada</br> | esri_canada |
 | <b>Earthquakes in Canada</b><br>(1985-2019) | Government of Canada; Natural Resources |
-| <b>Significant Canadian earthquakes</b><br>(1600-2006) | GEOSCAN
-Geological Survey of Canada |
+| <b>Significant Canadian earthquakes</b><br>(1600-2006) | GEOSCAN Geological Survey of Canada |
 
 Table 4. Multi-Criteria Decision Analysis and eastQUAKE Vulnerability Data.
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
-| <b>Population Density in 2016 by CT</b>| City of Hamilton https://open.hamilton.ca/datasets/3470c8be2fd64103a774c6ad857dbbcc_2/explore |
+| <b>Population Density in 2016 by CT</b>| City of Hamilton |
 | <b>Hamilton CTs</b>| City of Hamilton |
-| <b>Hospitals</b> | City of Hamilton https://open.hamilton.ca/datasets/a5867b5375544ceb8f06544a5ed349a5_15/explore?location=43.243107%2C-79.843051%2C13.18 |
-| <b>Fire stations</b>| City of Hamilton  https://open.hamilton.ca/datasets/dbb028cd6bcc4b218c607952b760fd04_5/explore?location=43.259500%2C-79.910650%2C11.81 |
-| <b>Age by CT in 2016</b><br>| City of Hamilton https://data-spatialsolutions.opendata.arcgis.com/datasets/cdc66a4b09a147c39eeb747c15d5f9d8_4/explore?showTable=true |
-| <b>Streets</b>| City of Hamilton https://open.hamilton.ca/datasets/f7af2fb9139444a0b3331f4663c16b15_14/explore?location=43.291554%2C-79.935150%2C11.18 |
-| <b>Watercourse (rivers)</b> | City of Hamilton https://open.hamilton.ca/datasets/6b303eed313244a992b1fdf3935cc1dd_7/explore?location=43.259900%2C-79.934300%2C11.21 |
-| <b>buildings</b>| City of Hamilton |
-| <b>Soil Landscapes of Canada</b> | Soil Landscapes of Canada Working Group, 2011. Soil Landscapes of Canada version 3.2. Agriculture and Agri-Food Canada. |
-| <b>Digital Elevation Model (DEM) - Provincial Tiled Dataset</b><br> | Ontario Mortality Data 2005- 2009, Ontario Geospatial Data Exchange (OGDE), Ministry of Natural Resources (OMNR) Ontario, Canada |
-| <b>Digital surface model derived from imagery</b> | Ontario GeoHub https://geohub.lio.gov.on.ca/maps/mnrf::ontario-digital-surface-model-imagery-derived/explore?location=43.541814%2C-79.509764%2C7.68 |
-| <b>Lithology</b> | https://www.geologyontario.mndm.gov.on.ca/mndmaccess/mndm_dir.asp?type=pub&id=MRD126-REV1 |
+| <b>Hospitals</b> | City of Hamilton |
+| <b>Fire stations</b>| City of Hamilton |
+| <b>Demographics by CT in 2016</b><br>| City of Hamilton |
+| <b>Street Centrelines</b>| City of Hamilton |
+| <b>Watercourses</b> | City of Hamilton |
+| <b>Buildings</b>| City of Hamilton |
+| <b>Soil Landscapes of Canada</b> | Agriculture and Agri-Food Canada. |
+| <b>Digital Elevation Model (DEM) - Provincial Tiled Dataset</b><br> | Ministry of Natural Resources (OMNR) Ontario, Canada |
+| <b>Digital Surface Model Derived from Imagery</b> | Ontario GeoHub |
+| <b>Lithology</b> | Geology Ontario |
 
 Table 3. eastQUAKEs Near You Data.
 | <b>Data Layer</b> | <b>Data Source</b> |
