@@ -88,7 +88,7 @@ The rasters were all put through the Reclassify tool to reclassify the data on a
 Each indicator was assigned a weight reflective of its proportion to its influence using a Pairwise Comparison Matrix.
 
 ###### Table 1. Pairwise Comparison Matrix  
-![alt text](https://github.com/omaddz/eastquake/blob/main/assets/img/t2.jpg?raw=true)
+![alt text](https://github.com/omaddz/eastquake/blob/assets/img/t2.jpg?raw=true)
 
 The composite weight for each indicator was calculated using the following formula, which was done in Microsoft Excel by Team McRaster:   
 
@@ -99,7 +99,7 @@ Once the indicator weights were calculated, they were standardized so the sum of
 Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
 
 ###### Table 2. Final weights (in %) of all 12 indicators   
-![alt text](https://github.com/omaddz/eastquake/blob/main/assets/img/t1.jpg?raw=true)
+![alt text](https://github.com/omaddz/eastquake/blob/assets/img/t1.jpg?raw=true)
 
 ##### _Part 3 - Calculating the Vulnerability Index_  
 
