@@ -88,7 +88,7 @@ The rasters were all put through the Reclassify tool to reclassify the data on a
 Each indicator was assigned a weight reflective of its proportion to its influence using a Pairwise Comparison Matrix.
 
 ###### Table 1. Pairwise Comparison Matrix  
-![alt text](/assets/img/t2.jpg?raw=true)
+![alt text](/t2.jpg?raw=true)
 
 The composite weight for each indicator was calculated using the following formula, which was done in Microsoft Excel by Team McRaster:   
 
