@@ -143,31 +143,37 @@ Note: The equations were provided by the Social Policy Analysis and Research for
 
 ## Geospatial Open Data Sources   
 
-Table 3. Data for Visible Minorities Layer 
+Table 3. Historical Earthquake Data
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
-| % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
-| Population of each neighbourhood | 2016 Neighbourhood Profiles (Toronto Open Data) |
+| <b>Provinces and Territories of Canada</br> | esri_canada |
+| <b>Earthquakes in Canada</b><br>(1985-2019) | Government of Canada; Natural Resources |
+| <b>Significant Canadian earthquakes</b><br>(1600-2006) | GEOSCAN
+Geological Survey of Canada |
 
-Table 4. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro and Microsoft Excel.
+Table 4. Multi-Criteria Decision Analysis and eastQUAKE Vulnerability Data.
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
-| <b>Unemployment</b><br>(Number of unemployed persons age 15+) | 2011 National Household Survey |
-| <b>Low Income</b><br>(Percentage of persons living below the after-tax low income measure) | Statistics Canada |
-| <b>Social Assistance</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | Toronto Employment & Social Services |
-| <b>High School Graduation</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | 2006 Census |
-| <b>Marginalization Index</b><br>(A combined measure of 18 variables representing residential instability, ethnic concentration, dependency and material deprivation) | Ontario Marginalization Index |
-| <b>Marginalization Index</b><br>(A combined measure of 18 variables representing residential instability, ethnic concentration, dependency and material deprivation) | Ontario Marginalization Index |
-| <b>Post-Secondary Completion</b><br>(Percentage of persons age 25-65 with post secondary certificate, diploma, or degree) | 2011 National Household Survey |
-| <b>Municipal Voting Rate</b><br>(Percent of eligible voters who voted in the last municipal election) | Toronto Election & Registry Services, Toronto Open Data |
-| <b>Community Places for Meeting</b><br>(Average number of meeting places within a 10 minute walking distance measured from each residential block in the neighbourhoods [including libraries, recreation facilities, and places of worship]) | Toronto Open Data |
-| <b>Walkability</b><br>(A walkability score between 0 (not very walkable) and 100 (very walkable)) | Walkscore.com |
-| <b>Healthy Food Stores</b><br>(The average number of healthier food stores within a 10 minute walking distance from each residential block in a neighbourhood) | Toronto Open Data, Toronto Dinesafe |
-| <b>Greenspace</b><br>(Average amount of green space (including parks and public areas) per km2 in a 1 km circular buffer from each residential block in the neighbourhood) | DMTI (University of Toronto) |
-| <b>Premature Mortality</b><br>(Age-adjusted number of deaths under age of 75 per 100,000 population age under 75) | Ontario Mortality Data 2005- 2009, Ontario Ministry of Health and Long-Term Care |
-| <b>Mental Health</b><br>(Percentage of those age 20+ reporting very good or excellent mental health) | 2005-2011 Canadian Community Health Survey |
-| <b>Preventative Hospitalizations</b><br>(Age and sex adjusted number of ambulatory care sensitive condition hospitalizations per 100,000 population) | 2009-2011 Discharge Abstracts Database, Canadian Institute for Health Information |
-| <b>Diabetes</b><br>(Age and sex adjusted number of persons age 20+ with diabetes per 100 population) | Ontario Diabetes Database, Ontario Registered Persons Database, Ontario Ministry of Health and Long-Term Care |
+| <b>Population Density in 2016 by CT</b>| City of Hamilton https://open.hamilton.ca/datasets/3470c8be2fd64103a774c6ad857dbbcc_2/explore |
+| <b>Hamilton CTs</b>| City of Hamilton |
+| <b>Hospitals</b> | City of Hamilton https://open.hamilton.ca/datasets/a5867b5375544ceb8f06544a5ed349a5_15/explore?location=43.243107%2C-79.843051%2C13.18 |
+| <b>Fire stations</b>| City of Hamilton  https://open.hamilton.ca/datasets/dbb028cd6bcc4b218c607952b760fd04_5/explore?location=43.259500%2C-79.910650%2C11.81 |
+| <b>Age by CT in 2016</b><br>| City of Hamilton https://data-spatialsolutions.opendata.arcgis.com/datasets/cdc66a4b09a147c39eeb747c15d5f9d8_4/explore?showTable=true |
+| <b>Streets</b>| City of Hamilton https://open.hamilton.ca/datasets/f7af2fb9139444a0b3331f4663c16b15_14/explore?location=43.291554%2C-79.935150%2C11.18 |
+| <b>Watercourse (rivers)</b> | City of Hamilton https://open.hamilton.ca/datasets/6b303eed313244a992b1fdf3935cc1dd_7/explore?location=43.259900%2C-79.934300%2C11.21 |
+| <b>buildings</b>| City of Hamilton |
+| <b>Soil Landscapes of Canada</b> | Soil Landscapes of Canada Working Group, 2011. Soil Landscapes of Canada version 3.2. Agriculture and Agri-Food Canada. |
+| <b>Digital Elevation Model (DEM) - Provincial Tiled Dataset</b><br> | Ontario Mortality Data 2005- 2009, Ontario Geospatial Data Exchange (OGDE), Ministry of Natural Resources (OMNR) Ontario, Canada |
+| <b>Digital surface model derived from imagery</b> | Ontario GeoHub https://geohub.lio.gov.on.ca/maps/mnrf::ontario-digital-surface-model-imagery-derived/explore?location=43.541814%2C-79.509764%2C7.68 |
+| <b>Lithology</b> | https://www.geologyontario.mndm.gov.on.ca/mndmaccess/mndm_dir.asp?type=pub&id=MRD126-REV1 |
+
+Table 3. eastQUAKEs Near You Data.
+| <b>Data Layer</b> | <b>Data Source</b> |
+| --- | --- |
+| <b>Earthquakes in Canada </b>(1985-2019) | Government of Canada; Natural Resources | 
+| <b>Significant Canadian earthquakes </b>(1600-2006) | GEOSCAN Geological Survey of Canada |
+| <b>Census Subdivisions of Canada 2016</b> | The Living Atlas |
+| <b>Population Centres 2018</b>| Derived from Administrative Boundaries in Canada |
  
 ## **Reference**   
  
