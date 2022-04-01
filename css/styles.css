@@ -3034,13 +3034,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #2937f0;
-  border-color: #2937f0;
+  background-color: #ac1455;
+  border-color: #ac1455;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #232fcc;
-  border-color: #212cc0;
+  background-color: #7A003C;
+  border-color: #7A003C;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
