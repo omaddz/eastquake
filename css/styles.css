@@ -61,7 +61,7 @@
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #5E6A71;
 }
 
 *,
@@ -129,6 +129,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  color: #FDBF57;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -497,6 +498,7 @@ progress {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
   line-height: 1.2;
+  color: #FDBF57;
 }
 @media (min-width: 1200px) {
   .display-1 {
@@ -530,6 +532,7 @@ progress {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
+  color: #FDBF57;
 }
 @media (min-width: 1200px) {
   .display-4 {
@@ -7717,7 +7720,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #ac1455 !important;
 }
 
 .text-secondary {
@@ -7752,12 +7755,12 @@ textarea.form-control-lg {
 
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: #ac1455 !important;
 }
 
 .text-black {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+  color: #ac1455 !important;
 }
 
 .text-white {
@@ -7772,12 +7775,12 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #fff !important;
 }
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: #ac1455 !important;
 }
 
 .text-white-50 {
@@ -7838,12 +7841,12 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: #f8f9fa !important;
+  background-color: #222222 !important;
 }
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #5E6A71 !important;
 }
 
 .bg-black {
@@ -11304,7 +11307,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background: -webkit-linear-gradient(#ac1455, #FDBF57);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11530,16 +11533,16 @@ section.cta:before {
   }
 }
 footer a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #161414;
   text-decoration: none;
 }
 footer a:hover, footer a:active, footer a:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #161414;
   text-decoration: underline;
 }
 
 .masthead {
-  background-color: #f8f9fa;
+  background-color: #222222;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
